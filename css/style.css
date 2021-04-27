@@ -1,6 +1,6 @@
 header {
   background: #5C5E61;
-  padding: 30px 0;
+  padding: 1.8em 0;
 }
 
 h1 {
@@ -8,6 +8,7 @@ h1 {
   font-size: 30px;
   font-weight: bold;
   color: #FFFFFF;
+  text-shadow: 2px 2px 5px #000000;
 }
 
 nav {
@@ -18,7 +19,6 @@ nav {
 
 nav li {
   display: inline;
-  /* margin-right: 8px; */
 }
 
 nav a {
@@ -27,7 +27,7 @@ nav a {
   color: #FFFFFF;
   text-decoration: none;
   padding: 0 6px;
-  transition: .2s color;
+  transition: .3s color;
 }
 
 nav a:hover {
@@ -44,20 +44,141 @@ nav a:active {
   color: #B078F3;
 }
 
-main {
-  padding: 65px 50px;
-}
-
-.hi-there {
-  font-size: 40px;
-  font-weight: bold;
-}
-
 main p {
   font-size: 18px;
 }
 
+.intro {
+  padding: 65px 50px;
+  margin: 0 5em;
+}
+
+.intro img {
+  width: 120px;
+  border-radius: 100%;
+  float: left;
+  margin-right: 25px;
+  box-shadow: 2px 2px 5px #000000;
+}
+
+.intro img:hover {
+  opacity: 0.7;
+}
+
+.intro h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.intro h2:hover {
+  color: #6DEE96;
+}
+
+.contents {
+  /* clear: left; */
+  /* margin-bottom: 2em; */
+}
+
+.contents h3 {
+  margin: .7em 0;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.contents ul {
+  text-align: center;
+  width: 700px;
+  margin: 2em auto;
+}
+
+.contents li {
+  display: inline;
+}
+
+.contents a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #6DEE96;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2.5px solid #6DEE96;
+  border-radius: 8px;
+  padding: 1em 0;
+  width: 35%;
+  margin: .3em;
+  transition: .3s;
+}
+
+.contents a:hover {
+  background: #6DEE96;
+  color: #FFFFFF;
+}
+
 footer {
   background: #8C95A2;
-  padding: 20px 0;
+  padding: 3em 0;
+  text-align: center;
+}
+
+.main-section h2 {
+  font-size: 2em;
+  margin: 1.5em 0 .8em 3em;
+  font-weight: bold;
+}
+
+/* Style for who-am-i.html */
+.who-am-i-snippet {
+  width: 40%;
+  background: #2D2D2D;
+  color: #ECECEC;
+  padding: 1.5em;
+  margin: 0 6em 3em;
+  line-height: 1.4em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.who-am-i-snippet p {
+  font-size: 1em;
+}
+
+/* Responsive Style */
+@media screen and (max-width: 480px) {
+  /* Home */
+  nav {
+    position: static;
+  }
+
+  .intro {
+    margin: 0;
+    text-align: center;
+    padding: 3em 2em 2em;
+  }
+
+  .intro img {
+    margin: 0 auto 1em;
+    display: block;
+    float: none;
+  }
+
+  .intro h2 {
+    font-size: 2em;
+  }
+
+  .contents ul {
+    width: 100%;
+  }
+
+  .main-section h2 {
+    margin: 1.5em 0 .5em 1em;
+  }
+
+  /* whoAmI */
+  .who-am-i-snippet {
+    margin: 0 auto 1em;
+    width: 80%;
+    font-size: .8em;
+  }
 }

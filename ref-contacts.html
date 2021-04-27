@@ -26,19 +26,25 @@
     </header>
 
     <main>
-      <section class="intro">
-        <img src="img/me.jpeg" alt="Author picture">
-        <h2>Hi there!</h2>
-        <p>My name is Matheus, and I appreciate you to visit my website...</p>
-      </section>
-      <section class="contents">
-        <h3>Contents</h3>
+      <section class="main-section">
+        <h2>References and Contacts</h2>
         <ul>
-          <li><a href="who-am-i.html">whoAmI</a></li>
-          <li><a href="professional.html">professional</a></li>
-          <li><a href="posts.html">posts</a></li>
-          <li><a href="portfolio.html">portfolio</a></li>
+          <li>LinkedIn</li>
+          <li>GitHub</li>
         </ul>
+        <h3>Do you wanna talk with me?</h3>
+        <p>Will be a pleasure to talk with you. So please, just fill the fields bellow to make me able to contact you, okay?</p>
+        <p>Use the language that you prefer, and I will do my best to communicate with you.</p>
+        <form> <!--class="" action="index.html" method="post"-->
+          <label for="email">What's your e-mail?</label>
+          <input id="email" type="email" placeholder="your_mail@email.com" required>
+
+          <label for="subject">What it's about?</label>
+          <input id="subject" type="text" required>
+
+          <label for="message">How can I help you?</label>
+          <textarea id="message" rows="10" cols="80" required></textarea>
+        </form>
       </section>
     </main>
 
